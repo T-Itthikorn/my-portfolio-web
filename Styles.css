@@ -1,0 +1,116 @@
+/* Home page */
+body {
+  background-color: white;
+}
+
+img {
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 300px;
+  box-shadow: 0 0 20px black;
+}
+
+h1 {
+  color: black;
+  margin-top: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.link {
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.textlink {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.textlink:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 0px 10px;
+  transform: scale(1.1);
+}
+
+/* About page */
+.content {
+  display: flex; /* ใช้ Flexbox */
+  justify-content: space-between; /* จัดระยะห่างระหว่างคอลัมน์ */
+  align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  margin: 50px;
+}
+@media (max-width: 960px) {
+  .content {
+    flex-direction: column; /* เปลี่ยนเป็นแนวตั้งเมื่อหน้าจอเล็กลง */
+    align-items: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
+  }
+}
+
+.column {
+  flex: 1; /* ให้คอลัมน์แต่ละอันมีขนาดเท่ากัน */
+  padding: 10px;
+}
+
+.column img {
+  width: 100%; /* ปรับขนาดรูปภาพให้พอดีกับคอลัมน์ */
+  height: auto;
+  box-shadow: 0 0 20px black;
+}
+
+.column h1 {
+  font-size: 36px;
+  text-align: left;
+}
+
+.column p {
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: justify;
+}
+/* Contact page */
+#text {
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+#box {
+  background-color: white;
+  margin: auto;
+  width: 450px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 0 0 10px black;
+}
+
+.logo {
+  margin: 30px;
+  width: 85px;
+  height: auto;
+  border: 1px solid white;
+}
+
+.textlink2 {
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.textlink2 :hover {
+  transform: scale(1.1);
+}
